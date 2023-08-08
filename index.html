@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* tag styling */
+        p {
+            color:aquamarine;
+            font-size:140%;
+        } 
+        /* id styling */
+        #paragraaf-1 {
+            color:red;
+        }
+        /* class styling */
+        .mytable {
+            background-color:blue;
+        }      
+    </style>
+
+    <script>
+        // comment
+        let a = 6; // declaration & assignment = initialisation
+        let b = 'hallo';
+        let c = true; 
+
+        console.log('Waarde van a is: ' + a);
+
+        let getal1 = 2;
+        let getal2 = 20;
+        let getal3 = 3.5;
+        let getal4 = 7.75;
+
+        let getal5 = getal1 + getal2; // + - / *
+
+        // getal1 = getal1 + 3
+        getal2 += 5 // += -= /= *=
+
+        // getal1 += 1
+        getal1++
+
+
+        // if statement
+        if (c) {
+            alert('yeehaw');
+        } else {
+            alert('yeeyee');
+        }
+
+
+        function telop() {
+            let getal1invoer = document.getElementById('getal1-invoer').value;
+            let getal2invoer = document.getElementById('getal2-invoer').value;
+            let res = parseInt(getal1invoer) + parseInt(getal2invoer);
+            alert(res);
+        }
+
+        function trekaf() {
+            let getal1invoer = document.getElementById('getal1-invoer').value;
+            let getal2invoer = document.getElementById('getal2-invoer').value;
+            let res = parseInt(getal1invoer) - parseInt(getal2invoer);
+            alert(res);
+        }
+
+        function deeldoor() {
+            let getal1invoer = document.getElementById('getal1-invoer').value;
+            let getal2invoer = document.getElementById('getal2-invoer').value;
+            let res = parseInt(getal1invoer) / parseInt(getal2invoer);
+            alert(res);
+        }
+
+        function vermenigvuldig() {
+            let getal1invoer = document.getElementById('getal1-invoer').value;
+            let getal2invoer = document.getElementById('getal2-invoer').value;
+            let res = parseInt(getal1invoer) * parseInt(getal2invoer);
+            alert(res);
+        }
+
+        function printItems(argument1, argument2) {
+            console.log('Argument 1 = ' + argument1);
+        }
+
+        printItems(12, 'test')
+
+    </script>
+</head>
+<body>
+
+    <h1>Hallo</h1>
+    <p id="paragraaf-1">Paragraaf</p><p>Paragraaf 2</p>
+    <!-- span tag (start & end) = element -->
+    
+    <!-- kleur in letters, # code, of rgb(26, 234, 32) -->
+    <!-- property = key & value -->
+    <span style="color:red">Span</span>
+    <span>Span 2</span>
+    <!-- id kan je toevoegen = attribute (att. name & value) -->
+
+    <br>
+
+    <!-- unordered list -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 1</li>
+    </ul>
+    <!-- ordered list -->
+    <ol>
+        <li>Item 1</li>
+        <li>Item 1</li>
+    </ol>
+
+    <!-- table -->
+    <table class="mytable table2">
+        <!-- rows -->
+        <tr>
+            <!-- cells -->
+            <td>
+                Cell 1
+            </td>
+            <td>
+                Cell 2
+            </td>
+        </tr>
+        <tr>
+            <!-- cells -->
+            <td>
+                Cell 3
+            </td>
+            <td>
+                Cell 4
+            </td>
+        </tr>
+    </table>
+    <br>
+
+    <!-- invoervelden -->
+    <input type="number" id="getal1-invoer" value="1">
+    <input type="number" id="getal2-invoer" value="2">
+    <button onclick="telop()">Optellen</button>
+    <button onclick="trekaf()">Aftrekken</button>
+    <button onclick="deeldoor()">Deel door</button>
+    <button onclick="vermenigvuldig()">vermenigvuldig</button>
+
+    <br><br>
+    <img width="100" height="80" src="https://pathowe.co.uk/wp-content/uploads/2017/02/HTML5.png">
+
+    </body>
+    </html>
